@@ -67,4 +67,16 @@ constructor() { }
    return this.heroes[i];
  }
 
+ buscarHeroes(termino: string) {
+   const resultadosHeroes: IHeroe[] = [];
+   termino = termino.toLowerCase();
+   for (const heroe of this.heroes) {
+    const nombre = heroe.nombre.toLowerCase();
+    if (nombre.indexOf(termino) >= 0) {
+      resultadosHeroes.push(heroe);
+     }
+   }
+   return resultadosHeroes;
+ }
+
 }
