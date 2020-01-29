@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Routes
-import { APP_ROUTING } from './app.routes';
+// import { APP_ROUTING } from './app.routes';
+import { AppRoutingModule } from './app-routing.module';
 
 // Services
 import { HeroesService } from './servicios/heroes.service';
@@ -30,7 +31,8 @@ import { HeroeCardComponent } from './components/heroeCard/heroeCard.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    // APP_ROUTING,
+    AppRoutingModule
   ],
   providers: [
     HeroesService
