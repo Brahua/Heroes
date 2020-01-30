@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'heroe/:id', component: HeroeComponent },
   { path: 'busqueda/:termino', component: BusquedaComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  // { path: '', component: PageNotFoundComponent },
   // { path: 'path/:routeParam', component: MyComponent },
   // { path: 'staticPath', component: ... },
   // { path: 'oldPath', redirectTo: '/staticPath' },
