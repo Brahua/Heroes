@@ -20,6 +20,6 @@ export class HeroeCardComponent implements OnInit {
 
 
   verHeroe() {
-    this.heroeSeleccionado.emit(this.index);
+    this.heroeSeleccionado.emit(this.heroe.id);
   }
 }
